@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale=1>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resources | QMHS</title>
+    <link rel="stylesheet" href="/static/CSS/style.css" />
+    <link rel="stylesheet" href="/static/CSS/nav.css" />
+    <link rel="stylesheet" href="/static/CSS/resources.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navigation">
+        <ul class="navul">
+            <li>
+                <a href="index.html">home</a>
+            </li>
+            <li>
+                <a href="stats.html">COVID-19 Stats</a>
+            </li>
+            <li>
+                <a href="diagnosis.html">Diagnosis</a>
+            </li>
+            <li>
+                <a href="results.html">Study Results</a>
+            </li>
+            <li>
+                <a href="resources.html" class="active">Important Resources</a>
+            </li>
+        </ul>
+    </div>
+
+    <input type="checkbox" id="active">
+  <label for="active" class="menu-btn"><span></span></label>
+  <label for="active" class="close"></label>
+  <div class="wrapper">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stats.html">COVID-19 Stats</a></li>
+      <li><a href="diagnosis.html">Diagnosis</a></li>
+      <li><a href="results.html">Study Results</a></li>
+      <li><a href="resources.html">Important Resources</a></li>
+    </ul>
+  </div>
+
+    <div class="card">
+
+        <details class="warning" open>
+            <summary>Mental Health Helplines</summary>
+            <p>16000 (Hamad Medical Corporation)</p>
+            <p>999 (Emergency Services)</p>
+            <p>4487 8722 (Weyak)</p>
+            <p>4489 8888 (Al-Ahli Hospital)</p>
+        </details>
+
+        <details class="info">
+            <summary>Therapy Clinics</summary>
+            <p href="https://www.drajusclinic.com">Dr Aju Abraham Medical Center</p>
+            <p href="https://www.sidra.org/clinics-services/department-of-psychiatry">Department of Psychiatry - Sidra
+            </p>
+            <p href="https://dohaclinichospital.com/departments">Doha Clinic Hospital</p>
+            <p href="https://www.ahlihospital.com/index.php/psychiatry/about-clinic/">Al Ahli Psychiatric Department</p>
+        </details>
+
+        <details class="alert">
+            <summary>Therapy Websites</summary>
+            <p>GoodTherapy</p>
+            <p>My Online Therapy</p>
+            <p>Talkspace</p>
+            <p>BetterHelp</p>
+        </details>
+    </div>
+
+    <div class="backgroundcover"></div>
+
+    <script>
+        // Fetch all the details element.
+        const details = document.querySelectorAll("details");
+
+        // Add the onclick listeners.
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener("click", () => {
+                // Close all the details that are not targetDetail.
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute("open");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
