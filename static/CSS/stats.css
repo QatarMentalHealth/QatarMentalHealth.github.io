@@ -285,59 +285,61 @@ body {
   .stat1 {
     width: 300px;
     height: 150px;
-    top: 21%;
+    top: 220px;
   }
 
   .stat2 {
     width: 300px;
     height: 150px;
-    top: 35.5%;
+    top: 410px;
   }
 
   .stat3 {
     width: 300px;
     height: 150px;
-    top: 50%;
+    top: 600px;
   }
 
   .stat4 {
     width: 300px;
     height: 150px;
-    top: 64.5%;
+    top: 790px;
   }
 
   .stat5 {
     width: 300px;
     height: 150px;
     top: 79%;
+    top: 980px;
   }
 
   .stat6 {
     width: 300px;
     height: 150px;
     top: 93.5%;
+    top: 1170px;
   }
 
   .stat7 { 
     width: 300px;
     height: 150px;
-    top: 108%;
+    top: 1360px;
   }
 
   .stat8 {
     width: 300px;
     height: 150px;
-    top: 122.5%;
+    top: 1550px;
   }
 
   .stat9 {
     width: 300px;
     height: 150px;
-    top: 137%;
+    top: 1740px;
   }
 
   .stat10 {
-    top: 137.5%;
+    top: 1700px;
   }
 
   .lastup {
